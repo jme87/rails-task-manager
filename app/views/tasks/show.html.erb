@@ -1,6 +1,9 @@
 <h2><%= @task.title %></h2>
-<p><%= @task.details %></p>
-<p><%= @task.completed %></p>
+
+<div class="alert alert-warning" role="alert">
+  <%= @task.details %>
+</div>
+<p><% @task.completed %></p>
 
 <%= link_to "✍️ Edit", edit_task_path %>
 <br>
